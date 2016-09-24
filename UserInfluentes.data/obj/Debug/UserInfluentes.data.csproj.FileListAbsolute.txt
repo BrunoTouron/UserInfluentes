@@ -1,0 +1,10 @@
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.data\bin\Debug\UserInfluentes.data.dll
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.data\bin\Debug\UserInfluentes.data.pdb
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.csprojResolveAssemblyReference.cache
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.dll
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.pdb
+D:\Projetos\UserInfluentes\UserInfluentes.data\bin\Debug\UserInfluentes.data.dll
+D:\Projetos\UserInfluentes\UserInfluentes.data\bin\Debug\UserInfluentes.data.pdb
+D:\Projetos\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.csprojResolveAssemblyReference.cache
+D:\Projetos\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.dll
+D:\Projetos\UserInfluentes\UserInfluentes.data\obj\Debug\UserInfluentes.data.pdb
