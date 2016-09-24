@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1.0', { 'packages': ['corechart'] });
+        $(document).ready(function() {
+
+
+            getInteractions();
+            function getInteractions()
+            {
+                $.ajax({
+                    url: '/api/UsersApi/GetInteractions',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        drawChartCallBack(data);
+                    },
+                    error: function () {
+                        alert('Erro ao carregar o Google Chart');
+                    }
+                });
+            }
+
+            function drawChartCallBack(arrayInteractions) {
+
+                alert('drawChartCallBack');
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'name');
+                data.addColumn('number', 'id');
+
+                for (i = 0; i < arrayInteractions.length; i++)
+                {
+                    data.addRow([arrayInteractions[i].Name,
+                                 arrayInteractions[i].Id],
+                                 1);
+                }
+
+                var options = {
+                    'title': 'Interactions',
+                    'width': 740,
+                    'height': 400
+                };
+
+                var chart = new google.visualization.PieChart
+                    (document.getElementById('divGoogleChart'));
+
+                chart.draw(data, options);
+            }
+
+        });
+
+
+    </script>
+
+}
+
+<div id="divGoogleChart" style="border:2px solid #ccc;width:740px;"></div>
