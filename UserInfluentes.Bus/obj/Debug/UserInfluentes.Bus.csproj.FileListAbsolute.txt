@@ -1,0 +1,17 @@
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.Bus.dll
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.Bus.pdb
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.dll
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.pdb
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.data.dll
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.data.pdb
+C:\Projetos\Bruno\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.csprojResolveAssemblyReference.cache
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.Bus.dll
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.Bus.pdb
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\Json.NET.Web.dll
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\Newtonsoft.Json.dll
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.data.dll
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\UserInfluentes.data.pdb
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\bin\Debug\Newtonsoft.Json.xml
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.csprojResolveAssemblyReference.cache
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.dll
+D:\Projetos\UserInfluentes\UserInfluentes.Bus\obj\Debug\UserInfluentes.Bus.pdb
