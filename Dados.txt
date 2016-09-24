@@ -1,0 +1,8 @@
+https://github.com/alexandre-gauge/frontend_data/blob/master/brands.json
+
+git@github.com:alexandre-gauge/frontend_data.git
+https://github.com/alexandre-gauge/frontend_data
+
+lovemondays
+
+rh@essenceit.com
