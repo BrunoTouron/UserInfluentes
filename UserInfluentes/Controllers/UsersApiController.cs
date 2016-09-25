@@ -13,15 +13,15 @@ namespace UserInfluentes.Controllers
 {
     public class UsersApiController : ApiController
     {
-        public IEnumerable<Brands> GetInteractions()
+        public IEnumerable<__Interactions> GetInteractions()
         {
             var usersBO = new UsersBO();
 
             usersBO.GetBrands();
             usersBO.GetUsers();
-            usersBO.GetInteractions();
+            usersBO.Get_Interactions();            
 
-            return usersBO.GetBrands();
+            return usersBO.GetInteractions();
         }
     }
 }
