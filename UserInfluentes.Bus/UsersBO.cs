@@ -18,6 +18,8 @@ namespace UserInfluentes.Bus
         List<Brands> brands;
         List<Users> users;
         List<Interactions> interactions;
+        List<_Interactions> _interactions;
+        List<__Interactions> __interactions;
 
         public List<Brands> GetBrands()
         {
@@ -33,20 +35,39 @@ namespace UserInfluentes.Bus
 
             return brands;       
         }
+        /*
+        public List<__Interactions> GetInteractions()
+        { 
 
-        public List<Interactions> GetInteractions()
+            foreach (_Interactions _inter in _interactions)
+            {
+                if (__interactions.Exists(x => x.User == _inter.User))
+                {
+                    __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                }
+                else
+                {
+                    __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                }
+
+            }
+
+            return __interactions;
+        }*/
+
+        public List<_Interactions> Get_Interactions()
         {
             JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
 
-            using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\brands.json"))
+            using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\interactions.json"))
             {
                 string json = r.ReadToEnd();
 
                 var json_serializer = new JavaScriptSerializer();
-                interactions = json_serializer.Deserialize<List<Interactions>>(json);
+                _interactions = json_serializer.Deserialize<List<_Interactions>>(json);
             }
 
-            return interactions;
+            return _interactions;
         }
 
         public List<Users> GetUsers()
