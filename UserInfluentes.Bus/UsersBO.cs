@@ -35,7 +35,7 @@ namespace UserInfluentes.Bus
 
             return brands;       
         }
-        /*
+        
         public List<__Interactions> GetInteractions()
         { 
 
@@ -53,7 +53,7 @@ namespace UserInfluentes.Bus
             }
 
             return __interactions;
-        }*/
+        }
 
         public List<_Interactions> Get_Interactions()
         {
