@@ -24,20 +24,19 @@
                         alert('Erro ao carregar o Google Chart');
                     }
                 });
+
             }
 
             function drawChartCallBack(arrayInteractions) {
 
-                alert('drawChartCallBack');
-
                 var data = new google.visualization.DataTable();
-                data.addColumn('string', 'name');
-                data.addColumn('number', 'id');
+                data.addColumn('string', 'User');
+                data.addColumn('number', 'Quantidade');
 
                 for (i = 0; i < arrayInteractions.length; i++)
                 {
-                    data.addRow([arrayInteractions[i].Name,
-                                 arrayInteractions[i].Id],
+                    data.addRow([arrayInteractions[i].User,
+                                 arrayInteractions[i].Quantidade],
                                  1);
                 }
 
