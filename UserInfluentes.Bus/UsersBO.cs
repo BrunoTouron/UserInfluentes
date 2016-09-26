@@ -22,7 +22,8 @@ namespace UserInfluentes.Bus
         List<__Interactions> __interactions;
 
         public List<Brands> GetBrands()
-        {
+        {            
+            
             JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
 
             using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\brands.json"))
@@ -41,15 +42,23 @@ namespace UserInfluentes.Bus
 
             foreach (_Interactions _inter in _interactions)
             {
-                if (__interactions.Exists(x => x.User == _inter.User))
+                if (__interactions == null)
                 {
+                    __interactions = new List<__Interactions>();
+
                     __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
                 }
                 else
                 {
-                    __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                    if (__interactions.Exists(x => x.User == _inter.User))
+                    {
+                        __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                    }
+                    else
+                    {
+                        __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                    }
                 }
-
             }
 
             return __interactions;
