@@ -26,7 +26,7 @@ namespace UserInfluentes.Bus
             
             JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
 
-            using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\brands.json"))
+            using (StreamReader r = new StreamReader("C:\\Projetos\\Bruno\\UserInfluentes\\brands.json"))
             {
                 string json = r.ReadToEnd();
 
@@ -46,17 +46,17 @@ namespace UserInfluentes.Bus
                 {
                     __interactions = new List<__Interactions>();
 
-                    __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                    __interactions.Add(new __Interactions(_inter.Brand, _inter.Brand.ToString(), _inter.User, _inter.User.ToString(), 1));
                 }
                 else
                 {
                     if (__interactions.Exists(x => x.User == _inter.User))
                     {
-                        __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                        __interactions.First(x => x.User == _inter.User).Quantidade = __interactions.First(x => x.User == _inter.User).Quantidade + 1;
                     }
                     else
                     {
-                        __interactions.Add(new __Interactions(_inter.Brand, "", _inter.User, "", 1));
+                        __interactions.Add(new __Interactions(_inter.Brand, _inter.Brand.ToString(), _inter.User, _inter.User.ToString(), 1));
                     }
                 }
             }
@@ -68,7 +68,7 @@ namespace UserInfluentes.Bus
         {
             JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
 
-            using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\interactions.json"))
+            using (StreamReader r = new StreamReader("C:\\Projetos\\Bruno\\UserInfluentes\\interactions.json"))
             {
                 string json = r.ReadToEnd();
 
@@ -83,7 +83,7 @@ namespace UserInfluentes.Bus
         {
             JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
 
-            using (StreamReader r = new StreamReader("D:\\Projetos\\UserInfluentes\\users.json"))
+            using (StreamReader r = new StreamReader("C:\\Projetos\\Bruno\\UserInfluentes\\users.json"))
             {
                 string json = r.ReadToEnd();
 
