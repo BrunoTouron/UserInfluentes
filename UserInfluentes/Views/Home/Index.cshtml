@@ -29,13 +29,9 @@
 
             function drawChartCallBack(arrayInteractions) {
 
-                alert('drawChartCallBack');
-
                 var data = new google.visualization.DataTable();
                 data.addColumn('string', 'UserDesc');
                 data.addColumn('number', 'Quantidade');
-
-                alert('drawChartCallBack 1');
 
                 for (i = 0; i < arrayInteractions.length; i++)
                 {
@@ -43,8 +39,6 @@
                                  arrayInteractions[i].Quantidade],
                                  1);
                 }
-
-                alert('drawChartCallBack 2');
 
                 var options = {
                     'title': 'Interactions',
